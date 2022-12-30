@@ -19,7 +19,6 @@ export default function Home() {
           Here's an example of a Netlify Form! When you fill this out, the
           submissions can be found in the Netlify Admin site.
         </p>
-        <JokeBlock />
         <FeedbackForm />
         <JokeBlock />
       </main>
