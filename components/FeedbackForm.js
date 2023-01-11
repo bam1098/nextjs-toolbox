@@ -88,20 +88,6 @@ export default function FeedbackForm() {
           <label htmlFor="feedback">What is your feedback?</label>
           <textarea id="feedback" className={styles['form-field']} wrap="soft" name="feedback" required></textarea>
         </div>
-
-        <div style="overflow:auto;">
-          <div style="float:right;">
-            <button type="button" id="prevBtn" onclick="btnStep(-1)">Previous</button>
-            <button type="button" id="nextBtn" onclick="btnStep(1)">Next</button>
-          </div>
-        </div>
-
-        
-        <div style="text-align:center;margin-top:40px;">
-          <span class="step"></span>
-          <span class="step"></span>
-          <span class="step"></span>
-        </div>
         <button className={styles.button} type="submit">Submit</button>
       </form>
 
