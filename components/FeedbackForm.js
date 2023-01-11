@@ -1,5 +1,5 @@
 import styles from './FeedbackForm.module.css'
-
+var currentTab = 0;
 export default function FeedbackForm() {
   return (
       <form
@@ -48,7 +48,7 @@ export default function FeedbackForm() {
         <button className={styles.button} type="submit">Submit</button>
       </form>
       <script>
-        var currentTab = 0; // Current tab is set to be the first tab (0)
+         // Current tab is set to be the first tab (0)
         showTab(currentTab); // Display the current tab
 
         function showTab(n) {
