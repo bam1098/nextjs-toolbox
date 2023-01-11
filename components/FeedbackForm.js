@@ -42,6 +42,16 @@ function btnStep(n) {
   showTab(currentTab);
 }
 
+function fixStepIndicator(n) {
+  // This function removes the "active" class of all steps...
+  var i, x = document.getElementsByClassName("step");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" active", "");
+  }
+  //... and adds the "active" class on the current step:
+  x[n].className += " active";
+}
+
 export default function FeedbackForm() {
   return (
       <form
