@@ -16,18 +16,18 @@ export default function FeedbackForm() {
             Don’t fill this out if you’re human: <input name="bot-field" />
             </label>
         </p>
-        <div class="tab" Meat:>
+        <div class="tab" Meat>
           <label htmlFor="meat">Meat</label>
           <p>How often do you eat animal-based products?</p>
           <input id="meat" className={styles['form-field']} type="text" name="name" />
         </div>
             
-        <div class="tab" Heating:>
+        <div class="tab" Heating>
           <label htmlFor="email">Email</label>
           <input id="email" className={styles['form-field']} type="email" name="email" required />
         </div>
 
-        <div class="tab" Heating:>
+        <div class="tab" Heating>
           <label htmlFor="feedback">What is your feedback?</label>
           <textarea id="feedback" className={styles['form-field']} wrap="soft" name="feedback" required></textarea>
         </div>
