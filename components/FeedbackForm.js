@@ -88,6 +88,10 @@ export default function FeedbackForm() {
           <label htmlFor="feedback">What is your feedback?</label>
           <textarea id="feedback" className={styles['form-field']} wrap="soft" name="feedback" required></textarea>
         </div>
+
+        <button type="button" id="prevBtn" onclick="btnStep(-1)">Previous</button>
+        <button type="button" id="nextBtn" onclick="btnStep(1)">Next</button>
+
         <button className={styles.button} type="submit">Submit</button>
       </form>
 
