@@ -21,7 +21,7 @@ function showTab(n) {
   }
   //... and run a function that will display the correct step indicator:
   fixStepIndicator(n)
-},
+}
 
 function btnStep(n) {
   // This function will figure out which tab to display
