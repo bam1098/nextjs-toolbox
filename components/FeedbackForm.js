@@ -89,5 +89,6 @@ export default function FeedbackForm() {
         // Otherwise, display the correct tab:
         showTab(currentTab);
       }
+    </script>
   )
 }
