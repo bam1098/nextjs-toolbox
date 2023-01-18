@@ -7,7 +7,7 @@ export default function FeedbackForm() {
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         name="feedback"
-        method="GET"
+        method="POST"
         action="/success"
       >
         <input type="hidden" name="form-name" value="feedback" />
@@ -30,7 +30,7 @@ export default function FeedbackForm() {
         </div>
 
         <div class="tab" Driving>
-          <label htmlFor="meat">Driving</label>
+          <label htmlFor="mpg">Driving</label>
           <p>How many miles per gallon can your car drive?</p>
           <input id="mpg" className={styles['form-field']} type="text" name="mpg" />
           <p>How many miles do you drive in a year?</p>
@@ -48,6 +48,12 @@ export default function FeedbackForm() {
         </div>
 
         <button className={styles.button} type="submit">Submit</button>
+
+        <script>
+          sessionStorage.setItem("variableName","test");
+          
+          
+        </script>
       </form>
 
 
