@@ -28,6 +28,14 @@ export default function FeedbackForm() {
           <p>How many times do you eat meat per week?</p>
           <input id="meat" className={styles['form-field']} type="text" name="meat" />
         </div>
+
+        <div class="tab" Driving>
+          <label htmlFor="meat">Driving</label>
+          <p>How many miles per gallon can your car drive?</p>
+          <input id="mpg" className={styles['form-field']} type="text" name="mpg" />
+          <p>How many miles do you drive in a year?</p>
+          <input id="miles" className={styles['form-field']} type="text" name="miles" />
+        </div>
             
         <div class="tab" Heating>
           <label htmlFor="email">Email</label>
