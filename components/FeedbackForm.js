@@ -1,5 +1,6 @@
 import styles from './FeedbackForm.module.css'
 import Script from 'next/script'
+import Document from 'next/document'
 
 export default function FeedbackForm() {
   return (
