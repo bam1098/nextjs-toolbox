@@ -1,8 +1,14 @@
 import styles from './FeedbackForm.module.css'
 import Script from 'next/script'
-import Document from 'next/document'
+import React, { useState } from 'react';
 
 export default function FeedbackForm() {
+  const [earths, updateBar] = useState(0)
+  function handleChange(){
+    updateBar(earths + 1);
+    console.log(earths);
+  }
+  
   return (
       <form
         className={styles.form}
@@ -28,7 +34,7 @@ export default function FeedbackForm() {
         <div class="tab" Meat>
           <label htmlFor="meat">Meat</label>
           <p id="a">How many times do you eat meat per week?</p>
-          <input id="meat" className={styles['form-field']} type="text" name="meat" />
+          <input id="meat" className={styles['form-field']} type="text" name="meat" onchange="handleChange()"/>
         </div>
 
         <div class="tab" Driving>
