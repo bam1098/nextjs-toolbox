@@ -6,7 +6,7 @@ export default function FeedbackForm() {
   const [earths, updateBar] = useState(0)
   function handleChange(){
     updateBar(earths + 1);
-    console.log(earths);
+    console.log("1");
   }
   
   return (
