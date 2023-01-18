@@ -55,8 +55,6 @@ export default function FeedbackForm() {
         </div>
 
         <button className={styles.button} type="submit">Submit</button>
-
-        <Script id="test-script">{console.log('plz')}</Script>
       </form>
 
 
