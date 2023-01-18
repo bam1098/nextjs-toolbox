@@ -28,7 +28,7 @@ export default function FeedbackForm() {
         <div class="tab" Name>
           <label htmlFor="name">Name</label>
           <p>Name (Optional)?</p>
-          <input id="name" className={styles['form-field']} type="text" name="name" />
+          <input id="name" className={styles['slider']} type="text" name="name" />
         </div>
 
         <div class="tab" Meat>
