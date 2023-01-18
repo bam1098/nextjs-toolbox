@@ -2,11 +2,12 @@ import styles from './FeedbackForm.module.css'
 import Script from 'next/script'
 import React, { useState } from 'react';
 
-function handleChange(){
-  console.log("1");
-}
+
 
 export default function FeedbackForm() {
+  function handleChange(){
+    console.log("1");
+  }
   
   return (
       <form
