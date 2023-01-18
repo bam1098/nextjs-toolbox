@@ -50,10 +50,7 @@ export default function FeedbackForm() {
 
         <button className={styles.button} type="submit">Submit</button>
 
-        <Script id="test-script">{
-          document.getElementById("a").innerHTML = "changed";
-          console.log('test');
-        }</Script>
+        <Script id="test-script">{document.getElementById("a").innerHTML = "changed";}</Script>
       </form>
 
 
