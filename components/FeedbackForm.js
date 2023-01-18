@@ -34,7 +34,7 @@ export default function FeedbackForm() {
         <div class="tab" Meat>
           <label htmlFor="meat">Meat</label>
           <p id="a">How many times do you eat meat per week?</p>
-          <input id="meat" className={styles['form-field']} type="text" name="meat" onChange='handleChange()'/>
+          <input id="meat" className={styles['form-field']} type="text" name="meat" onChange={handleChange()}/>
         </div>
 
         <div class="tab" Driving>
