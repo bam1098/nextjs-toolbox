@@ -16,6 +16,13 @@ export default function FeedbackForm() {
             Don’t fill this out if you’re human: <input name="bot-field" />
             </label>
         </p>
+
+        <div class="tab" Name>
+          <label htmlFor="name">Name</label>
+          <p>Name (Optional)?</p>
+          <input id="name" className={styles['form-field']} type="text" name="name" />
+        </div>
+
         <div class="tab" Meat>
           <label htmlFor="meat">Meat</label>
           <p>How many times do you eat meat per week?</p>
