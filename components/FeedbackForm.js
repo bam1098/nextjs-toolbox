@@ -28,13 +28,13 @@ export default function FeedbackForm() {
         <div class="tab" Name>
           <label htmlFor="name">Name</label>
           <p>Name (Optional)?</p>
-          <input id="name" className={styles['slider']} type="text" name="name" />
+          <input id="name" className={styles['form-field']} type="text" name="name" />
         </div>
 
         <div class="tab" Meat>
           <label htmlFor="meat">Meat</label>
           <p id="a">How many times do you eat meat per week?</p>
-          <input id="meat" className={styles['form-field']} type="range" min="0" max="25" value="10" name="meat" onChange={() => handleChange()}/>
+          <input id="meat" className={styles['slider']} type="range" min="0" max="25" value="10" name="meat" onChange={() => handleChange()}/>
         </div>
 
         <div class="tab" Driving>
