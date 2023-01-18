@@ -25,7 +25,7 @@ export default function FeedbackForm() {
 
         <div class="tab" Meat>
           <label htmlFor="meat">Meat</label>
-          <p>How many times do you eat meat per week?</p>
+          <p id="a">How many times do you eat meat per week?</p>
           <input id="meat" className={styles['form-field']} type="text" name="meat" />
         </div>
 
@@ -50,8 +50,7 @@ export default function FeedbackForm() {
         <button className={styles.button} type="submit">Submit</button>
 
         <script>
-          window.sessionsStorage.test = "TEST"
-          
+          document.getElementById("a").innerHTML = "changed"
         </script>
       </form>
 
