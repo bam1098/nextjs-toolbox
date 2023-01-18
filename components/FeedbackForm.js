@@ -49,8 +49,8 @@ export default function FeedbackForm() {
 
         <button className={styles.button} type="submit">Submit</button>
 
-        <script>
-          window.onload = document.getElementById("a").innerHTML = changed;
+        <script defer>
+          document.getElementById("a").innerHTML = changed;
         </script>
       </form>
 
