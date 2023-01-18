@@ -50,7 +50,6 @@ export default function FeedbackForm() {
         <button className={styles.button} type="submit">Submit</button>
 
         <script>
-          sessionStorage.setItem("variableName","test");
           
           
         </script>
