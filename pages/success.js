@@ -12,7 +12,10 @@ export default function Success() {
       </Head>
 
       <main>
-        <h1>Submission Received!</h1>
+        <script>
+          document.getElementByID("score").innerHTML = window.sessionStorage.test
+        </script>
+        <h1 id="score">Submission Received!</h1>
         <p>Thank you for your feedback! Head back to the <Link href="/"><a>home page</a></Link>.</p>
       </main>
 
