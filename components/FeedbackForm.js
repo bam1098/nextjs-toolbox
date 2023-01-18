@@ -1,5 +1,5 @@
 import styles from './FeedbackForm.module.css'
-import script from 'next/script'
+import Script from 'next/script'
 
 export default function FeedbackForm() {
   return (
@@ -50,9 +50,10 @@ export default function FeedbackForm() {
 
         <button className={styles.button} type="submit">Submit</button>
 
-        <script defer>
+        <Script id="test-script">{
           document.getElementById("a").innerHTML = "changed";
-        </script>
+          console.log('test');
+        }</Script>
       </form>
 
 
