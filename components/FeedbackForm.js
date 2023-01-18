@@ -6,7 +6,7 @@ import React, { useState } from 'react';
 
 export default function FeedbackForm() {
   function handleChange(){
-    console.log(document.getElementByID("meat").value);
+    console.log(document.getElementById("meat").value);
   }
   
   return (
