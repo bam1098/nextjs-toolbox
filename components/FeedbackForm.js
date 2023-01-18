@@ -6,7 +6,7 @@ import React, { useState } from 'react';
 
 export default function FeedbackForm() {
   function handleChange(){
-    console.log("1");
+    console.log(document.getElementByID("meat").value);
   }
   
   return (
@@ -43,16 +43,6 @@ export default function FeedbackForm() {
           <input id="mpg" className={styles['form-field']} type="text" name="mpg" />
           <p>How many miles do you drive in a year?</p>
           <input id="miles" className={styles['form-field']} type="text" name="miles" />
-        </div>
-            
-        <div class="tab" Heating>
-          <label htmlFor="email">Email</label>
-          <input id="email" className={styles['form-field']} type="email" name="email" required />
-        </div>
-
-        <div class="tab" Heating>
-          <label htmlFor="feedback">What is your feedback?</label>
-          <textarea id="feedback" className={styles['form-field']} wrap="soft" name="feedback" required></textarea>
         </div>
 
         <button className={styles.button} type="submit">Submit</button>
