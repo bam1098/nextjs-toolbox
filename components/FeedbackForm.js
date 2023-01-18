@@ -26,7 +26,7 @@ export default function FeedbackForm() {
         <div class="tab" Meat>
           <label htmlFor="meat">Meat</label>
           <p>How many times do you eat meat per week?</p>
-          <input id="meat" className={styles['form-field']} type="text" name="name" />
+          <input id="meat" className={styles['form-field']} type="text" name="meat" />
         </div>
             
         <div class="tab" Heating>
