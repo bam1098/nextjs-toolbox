@@ -2,11 +2,11 @@ import styles from './FeedbackForm.module.css'
 import Script from 'next/script'
 import React, { useState } from 'react';
 
+function handleChange(){
+  console.log("1");
+}
+
 export default function FeedbackForm() {
-  const [earths, updateBar] = useState(0)
-  function handleChange(){
-    console.log("1");
-  }
   
   return (
       <form
