@@ -97,7 +97,7 @@ export default function FeedbackForm() {
         name="feedback"
         method="POST"
         action="/success"
-        onLoad={updateAll}
+        onMouseOver={updateAll}
       >
         <input type="hidden" name="form-name" value="feedback" />
         <p className={styles.hidden}>
@@ -106,7 +106,7 @@ export default function FeedbackForm() {
             </label>
         </p>
 
-        <div class="tab" className={styles[nameStyle]} onLoad={updateAll}>
+        <div class="tab" className={styles[nameStyle]}>
           <label htmlFor="name">Name</label>
           <p>Name (Optional)?</p>
           <input id="name" className={styles['form-field']} type="text" name="name" />
