@@ -37,17 +37,17 @@ export default function FeedbackForm() {
           <label htmlFor="meat">Meat</label>
           <p id="a">How many times do you eat meat per week?</p>
           <input id="meat" className={styles['slider']} type="range" min="0" max="25" name="meat" onChange={() => handleChange()}/>
-          <p className={styles['slider']}>Servings: <span id="val1"></span></p>
+          <p className={styles['form-field']}>Servings: <span id="val1"></span></p>
         </div>
 
         <div class="tab" Driving>
           <label htmlFor="mpg">Driving</label>
           <p>How many miles per gallon can your car drive?</p>
           <input id="mpg" className={styles['slider']} type="range" min="5" max="50" name="mpg" onChange={() => handleChange()}/>
-          <p className={styles['slider']}>Mileage: <span id="val2"></span> MPG</p>
+          <p className={styles['form-field']}>Mileage: <span id="val2"></span> MPG</p>
           <p>How many miles do you drive in a year?</p>
           <input id="miles" className={styles['slider']} type="range" min="0" max="25000" name="miles" onChange={() => handleChange()}/>
-          <p className={styles['slider']}>Miles: <span id="val3"></span></p>
+          <p className={styles['form-field']}>Miles: <span id="val3"></span></p>
         </div>
 
         <button className={styles.button} type="submit">Submit</button>
