@@ -64,13 +64,13 @@ export default function FeedbackForm() {
          <div class="tab" Animal Products>
           <label htmlFor="Non-meat Animal products">Non-meat Animal Products</label>
           <p>How many times do you eat cheese per week?</p>
-          <input id="cheese" className={styles['slider']} type="range" min="0" max="25" name="cheese" onChange={() => handleChange() defaultValue="0"}/>
+          <input id="cheese" className={styles['slider']} type="range" min="0" max="25" name="cheese" onChange={() => handleChange()} defaultValue="0"/>
           <p className={styles['form-field']}>Servings: <span id="cheeseVal"></span></p>
           <p>How many times do you drink milk or use it in another dish per week?</p>
-          <input id="milk" className={styles['slider']} type="range" min="0" max="25" name="milk" onChange={() => handleChange() defaultValue="0"}/>
+          <input id="milk" className={styles['slider']} type="range" min="0" max="25" name="milk" onChange={() => handleChange()} defaultValue="0"/>
           <p className={styles['form-field']}>Cups: <span id="milkVal"></span></p>
           <p>How many eggs do you eat per week?</p>
-          <input id="eggs" className={styles['slider']} type="range" min="0" max="25" name="eggs" onChange={() => handleChange() defaultValue="0"}/>
+          <input id="eggs" className={styles['slider']} type="range" min="0" max="25" name="eggs" onChange={() => handleChange()} defaultValue="0"/>
           <p className={styles['form-field']}>Eggs: <span id="eggVal"></span></p>
         </div>
 
