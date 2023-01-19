@@ -18,8 +18,11 @@ export default function FeedbackForm() {
     document.getElementById("cheeseVal").innerHTML = cheese;
     document.getElementById("milkVal").innerHTML = milk;
     
-    var totEmissions = meat*1.25*52;
+    var totEmissions = meat/4*15*52;
     totEmissions += 20*miles/mpg
+    totEmissions += cheese/8*13.5
+    totEmissions += milk/1.85*1.9
+    
     document.getElementById("emissions").innerHTML = totEmissions;
   }
   
@@ -57,9 +60,9 @@ export default function FeedbackForm() {
           <p>How many times do you eat cheese per week?</p>
           <input id="cheese" className={styles['slider']} type="range" min="0" max="25" name="cheese" onChange={() => handleChange()}/>
           <p className={styles['form-field']}>Servings: <span id="cheeseVal"></span></p>
-          <p>How manny times do you drink milk or use it in another dish per week?</p>
+          <p>How many times do you drink milk or use it in another dish per week?</p>
           <input id="milk" className={styles['slider']} type="range" min="0" max="25" name="milk" onChange={() => handleChange()}/>
-          <p className={styles['form-field']}>Servings: <span id="milkVal"></span></p>
+          <p className={styles['form-field']}>Cups: <span id="milkVal"></span></p>
         </div>
 
         <div class="tab" Driving>
