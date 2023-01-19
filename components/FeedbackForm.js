@@ -41,7 +41,7 @@ export default function FeedbackForm() {
     console.log("you just clicked");
   
     setTransportStyle("hidden");
-  
+  }
  
   
   return (
