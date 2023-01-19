@@ -35,10 +35,12 @@ export default function FeedbackForm() {
     document.getElementById("emissions").innerHTML = totEmissions;
   }
   
-  function updateTab(current, next) {
-    document.getElementById(current).className={styles['hidden']};
-    //document.getElementById(next).className={styles['hidden']};
-  }
+  const [transportStyle, setTransportStyle] = useState("form-styles");
+  
+  const transPrev = () => {
+    console.log("you just clicked");
+  
+    setTransportStyle("hidden");
   
  
   
@@ -96,7 +98,7 @@ export default function FeedbackForm() {
           <button type="button" id="transportPrevBtn" onclick="updateTab("drivingTab", "transTab")">Next</button>
         </div>
 
-        <div class="tab" Transport id="transTab">
+        <div class="tab" className={transportStyle}>
           <label htmlFor="transport">Transport</label>
           <p>How many miles have you flown in the last year?</p>
           <input id="flyMiles" className={styles['slider']} type="range" min="0" max="20000" name="flyMiles" onChange={() => handleChange()} step="100" defaultValue="0"/>
@@ -104,7 +106,7 @@ export default function FeedbackForm() {
           <p>How many miles have you ridden on public transport (bus, train, trolley) in the last year??</p>
           <input id="pubMiles" className={styles['slider']} type="range" min="0" max="20000" name="pubMiles" onChange={() => handleChange()} step="100" defaultValue="0"/>
           <p className={styles['form-field']}>Miles: <span id="pubMilesVal"></span></p>
-          <button type="button" id="transportPrevBtn" onclick="updateTab("transTab", "drivingTab")">Previous</button>
+          <button type="button" id="transportPrevBtn" onclick="transPrev()">Previous</button>
         </div>
 
 
