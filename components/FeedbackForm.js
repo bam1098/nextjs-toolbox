@@ -35,12 +35,50 @@ export default function FeedbackForm() {
     document.getElementById("emissions").innerHTML = totEmissions;
   }
   
-  const [transportStyle, setTransportStyle] = useState('tab');
+  const [nameStyle, setNameStyle] = useState('tab');
+  const [meatStyle, setMeatStyle] = useState('tabHide');
+  const [animalStyle, setAnimalStyle] = useState('tabHide');
+  const [drivingStyle, setDrivingStyle] = useState('tabHide');
+  const [transportStyle, setTransportStyle] = useState('tabHide');
+  
+  const nameNext = () => {
+    setMeatStyle('tab');
+    setNameStyle('tabHide');
+  }
+  
+  const meatPrev = () => {
+    setNameStyle('tab');
+    setMeatStyle('tabHide');
+  }
+  
+  const meatNext = () => {
+    setAnimalStyle('tab');
+    setMeatStyle('tabHide');
+  }
+  
+  const animalPrev = () => {
+    setMeatStyle('tab');
+    setAnimalStyle('tabHide');
+  }
+  
+  const animalNext = () => {
+    setDrivingStyle('tab');
+    setAnimalStyle('tabHide');
+  }
+  
+  const drivingPrev = () => {
+    setAnimalStyle('tab');
+    setDrivingStyle('tabHide');
+  }
+  
+  const drivingNext = () => {
+    setTransportStyle('tab');
+    setDrivingStyle('tabHide');
+  }
   
   const transPrev = () => {
-    console.log("you just clicked");
-  
-    setTransportStyle('hidden');
+    setDrivingStyle('tab');
+    setTransportStyle('tabHide');
   }
  
   
@@ -60,20 +98,23 @@ export default function FeedbackForm() {
             </label>
         </p>
 
-        <div class="tab" Name>
+        <div class="tab" className={styles[nameStyle]}>
           <label htmlFor="name">Name</label>
           <p>Name (Optional)?</p>
           <input id="name" className={styles['form-field']} type="text" name="name" />
+          <button type="button" className={styles.button} onClick={nameNext}>Next</button>
         </div>
 
-        <div class="tab" Meat>
+        <div class="tab" className={styles[meatStyle]}>
           <label htmlFor="meat">Meat</label>
           <p>How many times do you eat meat per week?</p>
           <input id="meat" className={styles['slider']} type="range" min="0" max="25" name="meat" onChange={() => handleChange()} defaultValue="0"/>
           <p className={styles['form-field']}>Servings: <span id="meatVal"></span></p>
+          <button type="button" className={styles.button} onClick={meatPrev}>Previous</button>
+          <button type="button" className={styles.button} onClick={meatNext}>Next</button>
         </div>
 
-         <div class="tab" Animal Products id="animalTab">
+         <div class="tab" className={styles[animalStyle]}>
           <label htmlFor="Non-meat Animal products">Non-meat Animal Products</label>
           <p>How many times do you eat cheese per week?</p>
           <input id="cheese" className={styles['slider']} type="range" min="0" max="25" name="cheese" onChange={() => handleChange()} defaultValue="0"/>
@@ -84,9 +125,11 @@ export default function FeedbackForm() {
           <p>How many eggs do you eat per week?</p>
           <input id="eggs" className={styles['slider']} type="range" min="0" max="25" name="eggs" onChange={() => handleChange()} defaultValue="0"/>
           <p className={styles['form-field']}>Eggs: <span id="eggVal"></span></p>
+          <button type="button" className={styles.button} onClick={animalPrev}>Previous</button>
+          <button type="button" className={styles.button} onClick={animalNext}>Next</button>
         </div>
 
-        <div class="tab" Driving>
+        <div class="tab" className={styles[drivingStyle]}>
           <label htmlFor="driving">Driving</label>
           <p>How many miles per gallon can your car drive?</p>
           <input id="mpg" className={styles['slider']} type="range" min="5" max="50" name="mpg" onChange={() => handleChange()} defaultValue="0"/>
@@ -94,6 +137,8 @@ export default function FeedbackForm() {
           <p>How many miles have you driven in the last year?</p>
           <input id="carMiles" className={styles['slider']} type="range" min="0" max="20000" name="carMiles" onChange={() => handleChange()} step="1000" defaultValue="0"/>
           <p className={styles['form-field']}>Miles: <span id="milesVal"></span></p>
+          <button type="button" className={styles.button} onClick={drivingPrev}>Previous</button>
+          <button type="button" className={styles.button} onClick={drivingNext}>Next</button>
         </div>
 
         <div class="tab" className={styles[transportStyle]}>
@@ -104,7 +149,7 @@ export default function FeedbackForm() {
           <p>How many miles have you ridden on public transport (bus, train, trolley) in the last year??</p>
           <input id="pubMiles" className={styles['slider']} type="range" min="0" max="20000" name="pubMiles" onChange={() => handleChange()} step="100" defaultValue="0"/>
           <p className={styles['form-field']}>Miles: <span id="pubMilesVal"></span></p>
-          <button type="button" id="transportPrevBtn" onClick={transPrev}>Previous</button>
+          <button type="button" className={styles.button} onClick={transPrev}>Previous</button>
         </div>
 
 
