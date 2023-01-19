@@ -29,10 +29,11 @@ export default function FeedbackForm() {
     totEmissions += cheese/8*13.5*52;
     totEmissions += milk/1.85*1.9*52;
     totEmissions += eggs/8*4.8*52;
-    totEmissions += pubMiles*.14
-    totEmissions += flyMiles*.4
+    totEmissions += pubMiles*.14;
+    totEmissions += flyMiles*.4;
     
-    document.getElementById("emissions").innerHTML = totEmissions;
+    var earths = totEmissions/10000;
+    document.getElementById("emissions").innerHTML = earths;
   }
   
   const [nameStyle, setNameStyle] = useState('tab');
@@ -156,7 +157,7 @@ export default function FeedbackForm() {
 
 
 
-        <p className={styles['form-field']}>If everyone lived like you we would need: <span id="emissions"></span></p>
+        <p className={styles['form-field']}>If everyone lived like you we would need: <span id="emissions"></span> earths</p>
         <button className={styles.button} type="submit">Submit</button>
       </form>
 
