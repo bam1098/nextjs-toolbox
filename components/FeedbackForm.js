@@ -18,8 +18,8 @@ export default function FeedbackForm() {
     document.getElementById("cheeseVal").innerHTML = cheese;
     document.getElementById("milkVal").innerHTML = milk;
     
-    var totEmissions = slider*1.25*52;
-    totEmissions += 20*s3/s2
+    var totEmissions = meat*1.25*52;
+    totEmissions += 20*miles/mpg
     document.getElementById("emissions").innerHTML = totEmissions;
   }
   
