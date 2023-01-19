@@ -6,7 +6,7 @@ import React, { useState } from 'react';
 
 export default function FeedbackForm() {
   function handleChange(){
-    console.log(document.getElementById("meat").value);
+    document.getElementById("val1").innerHTML = document.getElementById("meat").value
   }
   
   return (
@@ -35,14 +35,15 @@ export default function FeedbackForm() {
           <label htmlFor="meat">Meat</label>
           <p id="a">How many times do you eat meat per week?</p>
           <input id="meat" className={styles['slider']} type="range" min="0" max="25" name="meat" onChange={() => handleChange()}/>
+          <p>Servings: <span id="val1"></span> :test</p>
         </div>
 
         <div class="tab" Driving>
           <label htmlFor="mpg">Driving</label>
           <p>How many miles per gallon can your car drive?</p>
-          <input id="mpg" className={styles['form-field']} type="text" name="mpg" />
+          <input id="mpg" className={styles['slider']} type="range" min="5" max="50" name="mpg" onChange={() => handleChange()}/>
           <p>How many miles do you drive in a year?</p>
-          <input id="miles" className={styles['form-field']} type="text" name="miles" />
+          <input id="miles" className={styles['slider']} type="range" min="0" max="25000" name="miles" onChange={() => handleChange()}/>
         </div>
 
         <button className={styles.button} type="submit">Submit</button>
