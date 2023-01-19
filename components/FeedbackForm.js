@@ -97,7 +97,7 @@ export default function FeedbackForm() {
             </label>
         </p>
 
-        <div class="tab" className={styles[nameStyle]}}>
+        <div class="tab" className={styles.hidden}>
           <label htmlFor="name">Name</label>
           <p>Name (Optional)?</p>
           <input id="name" className={styles['form-field']} type="text" name="name" />
