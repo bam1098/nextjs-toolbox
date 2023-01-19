@@ -96,7 +96,6 @@ export default function FeedbackForm() {
         name="feedback"
         method="POST"
         action="/success"
-        onLoad={updateAll}
       >
         <input type="hidden" name="form-name" value="feedback" />
         <p className={styles.hidden}>
