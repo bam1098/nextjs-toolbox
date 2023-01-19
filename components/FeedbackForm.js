@@ -11,17 +11,20 @@ export default function FeedbackForm() {
     var miles = document.getElementById("miles").value;
     var cheese = document.getElementById("cheese").value;
     var milk = document.getElementById("milk").value;
+    var eggs = document.getElementById("eggs").value;
     
     document.getElementById("meatVal").innerHTML = meat;
     document.getElementById("mpgVal").innerHTML = mpg;
     document.getElementById("milesVal").innerHTML = miles;
     document.getElementById("cheeseVal").innerHTML = cheese;
     document.getElementById("milkVal").innerHTML = milk;
+    document.getElementById("eggVal").innerHTML = eggs;
     
     var totEmissions = meat/4*15*52;
     totEmissions += 20*miles/mpg
     totEmissions += cheese/8*13.5
     totEmissions += milk/1.85*1.9
+    totEmissions += eggs/8*4.8
     
     document.getElementById("emissions").innerHTML = totEmissions;
   }
@@ -63,6 +66,9 @@ export default function FeedbackForm() {
           <p>How many times do you drink milk or use it in another dish per week?</p>
           <input id="milk" className={styles['slider']} type="range" min="0" max="25" name="milk" onChange={() => handleChange()}/>
           <p className={styles['form-field']}>Cups: <span id="milkVal"></span></p>
+          <p>How many eggs do you eat per week?</p>
+          <input id="eggs" className={styles['slider']} type="range" min="0" max="25" name="eggs" onChange={() => handleChange()}/>
+          <p className={styles['form-field']}>Eggs: <span id="eggVal"></span></p>
         </div>
 
         <div class="tab" Driving>
