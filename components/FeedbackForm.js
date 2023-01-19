@@ -46,7 +46,7 @@ export default function FeedbackForm() {
           <input id="mpg" className={styles['slider']} type="range" min="5" max="50" name="mpg" onChange={() => handleChange()}/>
           <p className={styles['form-field']}>Mileage: <span id="val2"></span> MPG</p>
           <p>How many miles do you drive in a year?</p>
-          <input id="miles" className={styles['slider']} type="range" min="0" max="25000" name="miles" onChange={() => handleChange()}/>
+          <input id="miles" className={styles['slider']} type="range" min="0" max="25000" name="miles" onChange={() => handleChange()} step="1000"/>
           <p className={styles['form-field']}>Miles: <span id="val3"></span></p>
         </div>
 
