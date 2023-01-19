@@ -86,7 +86,7 @@ export default function FeedbackForm() {
           <p className={styles['form-field']}>Eggs: <span id="eggVal"></span></p>
         </div>
 
-        <div class="tab" Driving "drivingTab">
+        <div class="tab" Driving>
           <label htmlFor="driving">Driving</label>
           <p>How many miles per gallon can your car drive?</p>
           <input id="mpg" className={styles['slider']} type="range" min="5" max="50" name="mpg" onChange={() => handleChange()} defaultValue="0"/>
@@ -94,8 +94,6 @@ export default function FeedbackForm() {
           <p>How many miles have you driven in the last year?</p>
           <input id="carMiles" className={styles['slider']} type="range" min="0" max="20000" name="carMiles" onChange={() => handleChange()} step="1000" defaultValue="0"/>
           <p className={styles['form-field']}>Miles: <span id="milesVal"></span></p>
-          <button type="button" id="transportPrevBtn" onclick="updateTab("drivingTab", "animalTab")">Previous</button>
-          <button type="button" id="transportPrevBtn" onclick="updateTab("drivingTab", "transTab")">Next</button>
         </div>
 
         <div class="tab" className={transportStyle}>
