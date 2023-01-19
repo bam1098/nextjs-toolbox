@@ -7,14 +7,16 @@ import React, { useState } from 'react';
 export default function FeedbackForm() {
   function handleChange(){
     var slider = document.getElementById("meat").value;
-    var s2 = document.getElementById("meat").value;
-    var s3 = document.getElementById("meat").value;
+    var s2 = document.getElementById("mpg").value;
+    var s3 = document.getElementById("miles").value;
     
     document.getElementById("val1").innerHTML = slider;
     document.getElementById("val2").innerHTML = s2;
     document.getElementById("val3").innerHTML = s3;
     
-
+    var totEmissions = slider*1.25*52;
+    totEmissions += 20*s3/s2
+    document.getElementById("emissions").innerHTML = totEmissions;
   }
   
   return (
@@ -56,6 +58,7 @@ export default function FeedbackForm() {
           <p className={styles['form-field']}>Miles: <span id="val3"></span></p>
         </div>
 
+        <p className={styles['form-field']}>Total emissions: <span id="emissions"></span></p>
         <button className={styles.button} type="submit">Submit</button>
       </form>
 
