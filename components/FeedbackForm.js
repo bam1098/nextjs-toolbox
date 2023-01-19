@@ -36,10 +36,8 @@ export default function FeedbackForm() {
   }
   
   //HERE
-  var currentTab = 0; // Current tab is set to be the first tab (0)
-  showTab(currentTab); // Display the current tab
 
-/*  function showTab(n) {
+  function showTab(n) {
     // This function will display the specified tab of the form ...
     var x = document.getElementsByClassName("tab");
     x[n].style.display = "block";
@@ -56,7 +54,7 @@ export default function FeedbackForm() {
     }
     // ... and run a function that displays the correct step indicator:
     fixStepIndicator(n)
-  }*/
+  }
 
   function nextPrev(n) {
     // This function will figure out which tab to display
