@@ -156,7 +156,7 @@ export default function FeedbackForm() {
 
 
 
-        <p className={styles['form-field']}>Total emissions: <span id="emissions"></span></p>
+        <p className={styles['form-field']}>If everyone lived like you we would need: <span id="emissions"></span></p>
         <button className={styles.button} type="submit">Submit</button>
       </form>
 
