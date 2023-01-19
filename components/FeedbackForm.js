@@ -35,7 +35,7 @@ export default function FeedbackForm() {
     document.getElementById("emissions").innerHTML = totEmissions;
   }
   
-  const [nameStyle, setNameStyle] = useState('tab');
+  const [nameStyle, setNameStyle] = useState('tabHide');
   const [meatStyle, setMeatStyle] = useState('tabHide');
   const [animalStyle, setAnimalStyle] = useState('tabHide');
   const [drivingStyle, setDrivingStyle] = useState('tabHide');
