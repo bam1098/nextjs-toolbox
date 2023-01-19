@@ -13,6 +13,7 @@ export default function FeedbackForm() {
     var milk = document.getElementById("milk").value;
     var eggs = document.getElementById("eggs").value;
     var pubMiles = document.getElementById("pubMiles").value;
+    var flyMiles = document.getElementById("flyMiles").value;
     
     document.getElementById("meatVal").innerHTML = meat;
     document.getElementById("mpgVal").innerHTML = mpg;
@@ -21,6 +22,7 @@ export default function FeedbackForm() {
     document.getElementById("milkVal").innerHTML = milk;
     document.getElementById("eggVal").innerHTML = eggs;
     document.getElementById("pubMilesVal").innerHTML = pubMiles;
+    document.getElementById("flyMilesVal").innerHTML = flyMiles;
     
     var totEmissions = meat/4*15*52;
     totEmissions += 20*carMiles/mpg;
@@ -28,6 +30,7 @@ export default function FeedbackForm() {
     totEmissions += milk/1.85*1.9;
     totEmissions += eggs/8*4.8;
     totEmissions += pubMiles*.14
+    totEmissions += flyMiles*.4
     
     document.getElementById("emissions").innerHTML = totEmissions;
   }
