@@ -21,6 +21,18 @@
   padding: 12px 20px;
   width: 100%;
 }
+
+.nextPrevButton {
+  background-color: green;
+  border: 1px solid black;
+  color: white;
+  width: 50%;
+  font-size: inherit;
+  margin: 15px 0;
+  padding: 12px 20px;
+  width: 100%;
+}
+
 .hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
