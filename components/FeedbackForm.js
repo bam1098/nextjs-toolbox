@@ -35,12 +35,12 @@ export default function FeedbackForm() {
     document.getElementById("emissions").innerHTML = totEmissions;
   }
   
-  const [transportStyle, setTransportStyle] = useState("form-styles");
+  const [transportStyle, setTransportStyle] = useState('tab');
   
   const transPrev = () => {
     console.log("you just clicked");
   
-    setTransportStyle("hidden");
+    setTransportStyle('hidden');
   }
  
   
@@ -96,7 +96,7 @@ export default function FeedbackForm() {
           <p className={styles['form-field']}>Miles: <span id="milesVal"></span></p>
         </div>
 
-        <div class="tab" className={transportStyle}>
+        <div class="tab" className={styles[transportStyle]}>
           <label htmlFor="transport">Transport</label>
           <p>How many miles have you flown in the last year?</p>
           <input id="flyMiles" className={styles['slider']} type="range" min="0" max="20000" name="flyMiles" onChange={() => handleChange()} step="100" defaultValue="0"/>
