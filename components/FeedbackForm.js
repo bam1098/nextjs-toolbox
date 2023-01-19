@@ -26,9 +26,9 @@ export default function FeedbackForm() {
     
     var totEmissions = meat/4*15*52;
     totEmissions += 20*carMiles/mpg;
-    totEmissions += cheese/8*13.5;
-    totEmissions += milk/1.85*1.9;
-    totEmissions += eggs/8*4.8;
+    totEmissions += cheese/8*13.5*52;
+    totEmissions += milk/1.85*1.9*52;
+    totEmissions += eggs/8*4.8*52;
     totEmissions += pubMiles*.14
     totEmissions += flyMiles*.4
     
@@ -145,7 +145,7 @@ export default function FeedbackForm() {
           <label htmlFor="transport">Transport</label>
           <p>How many miles have you flown in the last year?</p>
           <input id="flyMiles" className={styles['slider']} type="range" min="0" max="20000" name="flyMiles" onChange={() => handleChange()} step="100" defaultValue="0"/>
-          <p className={styles['form-field']}>Miles: <span id="flyMilesVal"></span> MPG</p>
+          <p className={styles['form-field']}>Miles: <span id="flyMilesVal"></span></p>
           <p>How many miles have you ridden on public transport (bus, train, trolley) in the last year??</p>
           <input id="pubMiles" className={styles['slider']} type="range" min="0" max="20000" name="pubMiles" onChange={() => handleChange()} step="100" defaultValue="0"/>
           <p className={styles['form-field']}>Miles: <span id="pubMilesVal"></span></p>
