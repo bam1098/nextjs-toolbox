@@ -48,7 +48,7 @@ export default function FeedbackForm() {
         <div class="tab" Meat>
           <label htmlFor="meat">Meat</label>
           <p>How many times do you eat meat per week?</p>
-          <input id="meat" className={styles['slider']} type="range" min="0" max="25" name="meat" onChange={() => handleChange()} value="0"/>
+          <input id="meat" className={styles['slider']} type="range" min="0" max="25" name="meat" onChange={() => handleChange()}/>
           <p className={styles['form-field']}>Servings: <span id="meatVal"></span></p>
         </div>
 
