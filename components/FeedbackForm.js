@@ -100,8 +100,10 @@ export default function FeedbackForm() {
         </div>
 
         <div>
-          <button className={styles.nextPrevButton} type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-          <button className={styles.nextPrevButton} type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+          <div>
+            <button className={styles.nextPrevButton} type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+            <button className={styles.nextPrevButton} type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+          </div>
         </div>
 
 
