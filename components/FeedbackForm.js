@@ -6,7 +6,9 @@ import React, { useState } from 'react';
 
 export default function FeedbackForm() {
   function handleChange(){
-    document.getElementById("val1").innerHTML = document.getElementById("meat").value
+    document.getElementById("val1").innerHTML = document.getElementById("meat").value;
+    document.getElementById("val2").innerHTML = document.getElementById("mpg").value;
+    document.getElementById("val3").innerHTML = document.getElementById("miles").value;
   }
   
   return (
@@ -42,8 +44,10 @@ export default function FeedbackForm() {
           <label htmlFor="mpg">Driving</label>
           <p>How many miles per gallon can your car drive?</p>
           <input id="mpg" className={styles['slider']} type="range" min="5" max="50" name="mpg" onChange={() => handleChange()}/>
+          <p className={styles['slider']}>Mileage: <span id="val2"></span> MPG</p>
           <p>How many miles do you drive in a year?</p>
           <input id="miles" className={styles['slider']} type="range" min="0" max="25000" name="miles" onChange={() => handleChange()}/>
+          <p className={styles['slider']}>Miles: <span id="val3"></span></p>
         </div>
 
         <button className={styles.button} type="submit">Submit</button>
