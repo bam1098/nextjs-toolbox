@@ -99,11 +99,9 @@ export default function FeedbackForm() {
           <p className={styles['form-field']}>Miles: <span id="pubMilesVal"></span></p>
         </div>
 
-        <div style="overflow:auto;">
-          <div style="float:right;">
-            <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-            <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
-          </div>
+        <div>
+          <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+          <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
         </div>
 
 
