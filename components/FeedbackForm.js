@@ -82,8 +82,7 @@ export default function FeedbackForm() {
   }
  
     const updateAll = () => {
-    console.log("here");
-    setMeatStyle('tabHide');
+    setMeatStyle('tabHide'),
     setAnimalStyle('tabHide');
     setDrivingStyle('tabHide');
     setTransportStyle('tabHide');
