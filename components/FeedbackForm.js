@@ -77,20 +77,20 @@ export default function FeedbackForm() {
         <div class="tab" Driving>
           <label htmlFor="driving">Driving</label>
           <p>How many miles per gallon can your car drive?</p>
-          <input id="mpg" className={styles['slider']} type="range" min="5" max="50" name="mpg" onChange={() => handleChange()}/>
+          <input id="mpg" className={styles['slider']} type="range" min="5" max="50" name="mpg" onChange={() => handleChange()} defaultValue="0"/>
           <p className={styles['form-field']}>Mileage: <span id="mpgVal"></span> MPG</p>
           <p>How many miles have you driven in the last year?</p>
-          <input id="carMiles" className={styles['slider']} type="range" min="0" max="20000" name="carMiles" onChange={() => handleChange()} step="1000"/>
+          <input id="carMiles" className={styles['slider']} type="range" min="0" max="20000" name="carMiles" onChange={() => handleChange()} step="1000" defaultValue="0"/>
           <p className={styles['form-field']}>Miles: <span id="milesVal"></span></p>
         </div>
 
         <div class="tab" Transport>
           <label htmlFor="transport">Transport</label>
           <p>How many miles have you flown in the last year?</p>
-          <input id="flyMiles" className={styles['slider']} type="range" min="5" max="50" name="flyMiles" onChange={() => handleChange()}/>
+          <input id="flyMiles" className={styles['slider']} type="range" min="0" max="20000" name="flyMiles" onChange={() => handleChange()} step="100" defaultValue="0"/>
           <p className={styles['form-field']}>Miles: <span id="flyMilesVal"></span> MPG</p>
           <p>How many miles have you ridden on public transport (bus, train, trolley) in the last year??</p>
-          <input id="pubMiles" className={styles['slider']} type="range" min="0" max="20000" name="pubMiles" onChange={() => handleChange()} step="1000"/>
+          <input id="pubMiles" className={styles['slider']} type="range" min="0" max="20000" name="pubMiles" onChange={() => handleChange()} step="100" defaultValue="0"/>
           <p className={styles['form-field']}>Miles: <span id="pubMilesVal"></span></p>
         </div>
 
