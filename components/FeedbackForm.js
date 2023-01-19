@@ -6,13 +6,17 @@ import React, { useState } from 'react';
 
 export default function FeedbackForm() {
   function handleChange(){
-    var slider = document.getElementById("meat").value;
-    var s2 = document.getElementById("mpg").value;
-    var s3 = document.getElementById("miles").value;
+    var meat = document.getElementById("meat").value;
+    var mpg = document.getElementById("mpg").value;
+    var miles = document.getElementById("miles").value;
+    var cheese = document.getElementById("cheese").value;
+    var milk = document.getElementById("milk").value;
     
-    document.getElementById("val1").innerHTML = slider;
-    document.getElementById("val2").innerHTML = s2;
-    document.getElementById("val3").innerHTML = s3;
+    document.getElementById("meatVal").innerHTML = meat;
+    document.getElementById("mpgVal").innerHTML = mpg;
+    document.getElementById("milesVal").innerHTML = miles;
+    document.getElementById("cheeseVal").innerHTML = cheese;
+    document.getElementById("milkVal").innerHTML = milk;
     
     var totEmissions = slider*1.25*52;
     totEmissions += 20*s3/s2
@@ -43,19 +47,29 @@ export default function FeedbackForm() {
 
         <div class="tab" Meat>
           <label htmlFor="meat">Meat</label>
-          <p id="a">How many times do you eat meat per week?</p>
+          <p>How many times do you eat meat per week?</p>
           <input id="meat" className={styles['slider']} type="range" min="0" max="25" name="meat" onChange={() => handleChange()}/>
-          <p className={styles['form-field']}>Servings: <span id="val1"></span></p>
+          <p className={styles['form-field']}>Servings: <span id="meatVal"></span></p>
+        </div>
+
+         <div class="tab" Animal Products>
+          <label htmlFor="cheese">Cheese</label>
+          <p>How many times do you eat cheese per week?</p>
+          <input id="cheese" className={styles['slider']} type="range" min="0" max="25" name="cheese" onChange={() => handleChange()}/>
+          <p className={styles['form-field']}>Servings: <span id="cheeseVal"></span></p>
+          <p>How manny times do you drink milk or use it in another dish per week?</p>
+          <input id="milk" className={styles['slider']} type="range" min="0" max="25" name="milk" onChange={() => handleChange()}/>
+          <p className={styles['form-field']}>Servings: <span id="milkVal"></span></p>
         </div>
 
         <div class="tab" Driving>
           <label htmlFor="mpg">Driving</label>
           <p>How many miles per gallon can your car drive?</p>
           <input id="mpg" className={styles['slider']} type="range" min="5" max="50" name="mpg" onChange={() => handleChange()}/>
-          <p className={styles['form-field']}>Mileage: <span id="val2"></span> MPG</p>
+          <p className={styles['form-field']}>Mileage: <span id="mpgVal"></span> MPG</p>
           <p>How many miles do you drive in a year?</p>
-          <input id="miles" className={styles['slider']} type="range" min="0" max="25000" name="miles" onChange={() => handleChange()} step="1000"/>
-          <p className={styles['form-field']}>Miles: <span id="val3"></span></p>
+          <input id="miles" className={styles['slider']} type="range" min="0" max="20000" name="miles" onChange={() => handleChange()} step="1000"/>
+          <p className={styles['form-field']}>Miles: <span id="milesVal"></span></p>
         </div>
 
         <p className={styles['form-field']}>Total emissions: <span id="emissions"></span></p>
