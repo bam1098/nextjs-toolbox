@@ -35,6 +35,12 @@ export default function FeedbackForm() {
     document.getElementById("emissions").innerHTML = totEmissions;
   }
   
+  function updateTab(n) {
+    
+  
+  
+  }
+  
  
   
   return (
@@ -99,12 +105,7 @@ export default function FeedbackForm() {
           <p className={styles['form-field']}>Miles: <span id="pubMilesVal"></span></p>
         </div>
 
-        <div>
-          <div>
-            <button className={styles.nextPrevButton} type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-            <button className={styles.nextPrevButton} type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
-          </div>
-        </div>
+
 
 
 
