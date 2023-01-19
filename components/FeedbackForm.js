@@ -6,13 +6,15 @@ import React, { useState } from 'react';
 
 export default function FeedbackForm() {
   function handleChange(){
-    document.getElementById("val1").innerHTML = document.getElementById("meat").value;
-    document.getElementById("val2").innerHTML = document.getElementById("mpg").value;
-    document.getElementById("val3").innerHTML = document.getElementById("miles").value;
-    
     var slider = document.getElementById("meat").value;
     var s2 = document.getElementById("meat").value;
     var s3 = document.getElementById("meat").value;
+    
+    document.getElementById("val1").innerHTML = slider;
+    document.getElementById("val2").innerHTML = s2;
+    document.getElementById("val3").innerHTML = s3;
+    
+
   }
   
   return (
