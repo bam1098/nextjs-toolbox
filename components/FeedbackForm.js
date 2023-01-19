@@ -35,10 +35,9 @@ export default function FeedbackForm() {
     document.getElementById("emissions").innerHTML = totEmissions;
   }
   
-  function updateTab(n) {
-    
-  
-  
+  function updateTab(current, next) {
+    document.getElementById(current).className={styles['hidden']};
+    //document.getElementById(next).className={styles['hidden']};
   }
   
  
@@ -72,7 +71,7 @@ export default function FeedbackForm() {
           <p className={styles['form-field']}>Servings: <span id="meatVal"></span></p>
         </div>
 
-         <div class="tab" Animal Products>
+         <div class="tab" Animal Products id="animalTab">
           <label htmlFor="Non-meat Animal products">Non-meat Animal Products</label>
           <p>How many times do you eat cheese per week?</p>
           <input id="cheese" className={styles['slider']} type="range" min="0" max="25" name="cheese" onChange={() => handleChange()} defaultValue="0"/>
@@ -85,7 +84,7 @@ export default function FeedbackForm() {
           <p className={styles['form-field']}>Eggs: <span id="eggVal"></span></p>
         </div>
 
-        <div class="tab" Driving>
+        <div class="tab" Driving "drivingTab">
           <label htmlFor="driving">Driving</label>
           <p>How many miles per gallon can your car drive?</p>
           <input id="mpg" className={styles['slider']} type="range" min="5" max="50" name="mpg" onChange={() => handleChange()} defaultValue="0"/>
@@ -93,9 +92,11 @@ export default function FeedbackForm() {
           <p>How many miles have you driven in the last year?</p>
           <input id="carMiles" className={styles['slider']} type="range" min="0" max="20000" name="carMiles" onChange={() => handleChange()} step="1000" defaultValue="0"/>
           <p className={styles['form-field']}>Miles: <span id="milesVal"></span></p>
+          <button type="button" id="transportPrevBtn" onclick="updateTab("drivingTab", "animalTab")">Previous</button>
+          <button type="button" id="transportPrevBtn" onclick="updateTab("drivingTab", "transTab")">Next</button>
         </div>
 
-        <div class="tab" Transport>
+        <div class="tab" Transport id="transTab">
           <label htmlFor="transport">Transport</label>
           <p>How many miles have you flown in the last year?</p>
           <input id="flyMiles" className={styles['slider']} type="range" min="0" max="20000" name="flyMiles" onChange={() => handleChange()} step="100" defaultValue="0"/>
@@ -103,6 +104,7 @@ export default function FeedbackForm() {
           <p>How many miles have you ridden on public transport (bus, train, trolley) in the last year??</p>
           <input id="pubMiles" className={styles['slider']} type="range" min="0" max="20000" name="pubMiles" onChange={() => handleChange()} step="100" defaultValue="0"/>
           <p className={styles['form-field']}>Miles: <span id="pubMilesVal"></span></p>
+          <button type="button" id="transportPrevBtn" onclick="updateTab("transTab", "drivingTab")">Previous</button>
         </div>
 
 
