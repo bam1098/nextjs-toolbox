@@ -88,13 +88,8 @@
 }
 
 /*HERE AND DOWN          */
-
-/* Hide all steps by default: */
 .tabHide {
   display: none;
 }
 
-.tab {
-  background-color: red;
-  width: 50%
-}
+.tab {}
