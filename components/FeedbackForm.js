@@ -104,7 +104,7 @@ export default function FeedbackForm() {
           <p>How many miles have you ridden on public transport (bus, train, trolley) in the last year??</p>
           <input id="pubMiles" className={styles['slider']} type="range" min="0" max="20000" name="pubMiles" onChange={() => handleChange()} step="100" defaultValue="0"/>
           <p className={styles['form-field']}>Miles: <span id="pubMilesVal"></span></p>
-          <button type="button" id="transportPrevBtn" onclick="transPrev()">Previous</button>
+          <button type="button" id="transportPrevBtn" onClick="transPrev">Previous</button>
         </div>
 
 
