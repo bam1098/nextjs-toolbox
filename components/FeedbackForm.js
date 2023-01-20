@@ -115,7 +115,7 @@ export default function FeedbackForm() {
           <button type="button" className={styles.button} onClick={meatNext}>Next</button>
         </div>
 
-         <div class="tab" className={styles[animalStyle]}>
+         <div className={styles[animalStyle]}>
           <label htmlFor="Non-meat Animal products">Non-meat Animal Products</label>
           <p>How many times do you eat cheese per week?</p>
           <input id="cheese" className={styles['slider']} type="range" min="0" max="25" name="cheese" onChange={() => handleChange()} defaultValue="0"/>
@@ -130,7 +130,7 @@ export default function FeedbackForm() {
           <button type="button" className={styles.button} onClick={animalNext}>Next</button>
         </div>
 
-        <div class="tab" className={styles[drivingStyle]}>
+        <div className={styles[drivingStyle]}>
           <label htmlFor="driving">Driving</label>
           <p>How many miles per gallon can your car drive?</p>
           <input id="mpg" className={styles['slider']} type="range" min="5" max="50" name="mpg" onChange={() => handleChange()} defaultValue="0"/>
@@ -142,7 +142,7 @@ export default function FeedbackForm() {
           <button type="button" className={styles.button} onClick={drivingNext}>Next</button>
         </div>
 
-        <div class="tab" className={styles[transportStyle]}>
+        <div className={styles[transportStyle]}>
           <label htmlFor="transport">Transport</label>
           <p>How many miles have you flown in the last year?</p>
           <input id="flyMiles" className={styles['slider']} type="range" min="0" max="20000" name="flyMiles" onChange={() => handleChange()} step="100" defaultValue="0"/>
