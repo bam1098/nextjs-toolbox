@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Footer from "@components/Footer";
-import background from "/public/background.jfif"
+import background from "/public/background.jpeg"
 
 export default function Home() {
   return (
