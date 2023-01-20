@@ -10,7 +10,9 @@ export default function Home() {
       </Head>
 
       <main>
-        <button type="button" Link href="/survey.js">Footprint Calculator</button>
+        <a href="/survey">
+          <button>Begin the Survey!</button>
+        </a>
       </main>
       <Footer />
     </div>
