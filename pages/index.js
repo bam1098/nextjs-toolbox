@@ -13,9 +13,6 @@ export default function Home() {
       </Head>
 
       <main>
-        <Header title="Footprint Calculator" />
-        <hr />
-        <FeedbackForm />
       </main>
       <Footer />
     </div>
