@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Footer from "@components/Footer";
+import background from "/background.jfif"
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       </Head>
 
       <main>
+        <img src="/House & Chimney.xcf" alt="testphoto"/>
         <a href="/survey">
           <button>Begin the Survey!</button>
         </a>
