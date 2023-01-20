@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Footer from "@components/Footer";
+import FeedbackForm from '@components/FeedbackForm';
 
 export default function Home() {
   return (
