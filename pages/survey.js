@@ -1,1 +1,1 @@
-import Feedback from "@components/Feedback";
+import FeedbackForm from "@components/FeedbackForm";
