@@ -81,6 +81,13 @@ export default function FeedbackForm() {
     setDrivingStyle('tab');
     setTransportStyle('tabHide');
   }
+  
+  const updateAll = () => {
+    setMeatStyle('tabHide');
+    setAnimalStyle('tabHide');
+    setDrivingStyle('tabHide');
+    setTransportStyle('tabHide');
+  }
  
   
   return (
@@ -91,6 +98,7 @@ export default function FeedbackForm() {
         name="feedback"
         method="POST"
         action="/success"
+        onLoad={updateAll}
       >
         <input type="hidden" name="form-name" value="feedback" />
         <p className={styles.hidden}>
