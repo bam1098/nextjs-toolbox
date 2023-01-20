@@ -106,7 +106,7 @@ export default function FeedbackForm() {
           <button type="button" className={styles.button} onClick={nameNext}>Next</button>
         </div>
 
-        <div class="tab" className={styles[meatStyle]}>
+        <div className={styles[meatStyle]}>
           <label htmlFor="meat">Meat</label>
           <p>How many times do you eat meat per week?</p>
           <input id="meat" className={styles['slider']} type="range" min="0" max="25" name="meat" onChange={() => handleChange()} defaultValue="0"/>
