@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Footer from "@components/Footer";
-import background from "./background.jpeg"
 
 export default function Home() {
   return (
