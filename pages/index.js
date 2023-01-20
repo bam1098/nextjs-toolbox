@@ -13,6 +13,7 @@ export default function Home() {
       </Head>
 
       <main>
+        <button type="button" onClick=/survey.js> Footprint Calculator</button>
       </main>
       <Footer />
     </div>
