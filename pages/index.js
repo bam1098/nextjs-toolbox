@@ -10,10 +10,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <img src="/House & Chimney.xcf" alt="testphoto"/>
-        <a href="/survey">
-          <button>Begin the Survey!</button>
-        </a>
+        <FeedbackForm />
       </main>
       <Footer />
     </div>
