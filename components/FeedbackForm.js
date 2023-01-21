@@ -1,6 +1,7 @@
 import styles from './FeedbackForm.module.css'
 import Script from 'next/script'
 import React, { useState } from 'react';
+import image from './public/background.svg'
 
 
 
