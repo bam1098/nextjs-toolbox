@@ -92,7 +92,6 @@ export default function FeedbackForm() {
         name="feedback"
         method="POST"
         action="/success"
-        style={{ backgroundImage:`url(${image})`}}
       >
         <input type="hidden" name="form-name" value="feedback" />
         <p className={styles.hidden}>
@@ -105,6 +104,7 @@ export default function FeedbackForm() {
           <label htmlFor="name">Name</label>
           <p>Name (Optional)?</p>
           <input id="name" className={styles['form-field']} type="text" name="name" />
+          <img src=image alt="Test img"/>
           <button type="button" className={styles.button} onClick={nameNext}>Next</button>
         </div>
 
