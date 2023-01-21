@@ -5,7 +5,7 @@ import background from './background.svg';
 
 export default function Home() {
   return (
-    <div style={{ backgroundImage:`url(${background})` }}>
+    <div className="container">
       <Head>
         <title>Footprint Calculator</title>
         <link rel="icon" href="/favicon.ico" />
