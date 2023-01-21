@@ -1,7 +1,6 @@
 import styles from './FeedbackForm.module.css'
 import Script from 'next/script'
 import React, { useState } from 'react';
-import image from './background.svg'
 
 
 
@@ -104,7 +103,7 @@ export default function FeedbackForm() {
           <label htmlFor="name">Name</label>
           <p>Name (Optional)?</p>
           <input id="name" className={styles['form-field']} type="text" name="name" />
-          <img src='./background.svg' alt="Test img"/>
+          <img src='./House & Chimney.xcf' alt="Test img"/>
           <button type="button" className={styles.button} onClick={nameNext}>Next</button>
         </div>
 
