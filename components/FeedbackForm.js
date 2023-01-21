@@ -91,6 +91,7 @@ export default function FeedbackForm() {
         name="feedback"
         method="POST"
         action="/success"
+        style={{ backgroundImage:`url(${image})`,backgroundRepeat:"no-repeat",backgroundSize:"contain" }}
       >
         <input type="hidden" name="form-name" value="feedback" />
         <p className={styles.hidden}>
