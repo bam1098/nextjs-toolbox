@@ -104,7 +104,7 @@ export default function FeedbackForm() {
           <label htmlFor="name">Name</label>
           <p>Name (Optional)?</p>
           <input id="name" className={styles['form-field']} type="text" name="name" />
-          <img src={image} alt="Test img"/>
+          <img src='./background.svg' alt="Test img"/>
           <button type="button" className={styles.button} onClick={nameNext}>Next</button>
         </div>
 
