@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Footer from "@components/Footer";
 import FeedbackForm from '@components/FeedbackForm';
-import background from './background.svg';
+import background from './bg.svg';
 
 const styling = {
     backgroundImage: `url(${background.src})`,
