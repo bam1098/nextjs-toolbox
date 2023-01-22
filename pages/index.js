@@ -7,8 +7,6 @@ const styling = {
     backgroundImage: `url(${background.src})`,
     width:"100%",
     height:"100%",
-    backgroundRepeat:"no-repeat",
-    objectFit: "fill",
 }
 
 export default function Home() {
