@@ -8,7 +8,7 @@ const styling = {
     width:"100%",
     height:"100%",
     backgroundRepeat:"no-repeat",
-    background-size: contain,
+    background-size: "contain",
 }
 
 export default function Home() {
