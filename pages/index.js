@@ -23,7 +23,6 @@ export default function Home() {
         <img src='./ram.svg' alt="Rammy"/>
         <FeedbackForm />
       </main>
-      <Footer />
     </div>
   );
 }
