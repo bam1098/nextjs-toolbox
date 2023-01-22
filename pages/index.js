@@ -11,8 +11,8 @@ const backgroundStyling = {
     height:"100vh",
 }
 const logo = {
-    height:"9vh",
-    width:"9vw",
+    height:"10vh",
+    width:"10vw",
     display:"flex",
     justifyContent: "center",
     padding:"1vh"
