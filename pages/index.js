@@ -26,7 +26,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <img src='./ram.svg' alt="Rammy" align:"left" style={logo}/>
+        <img src='./ram.svg' alt="Rammy" style={logo}/>
         <FeedbackForm />
       </main>
     </div>
