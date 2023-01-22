@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Footer from "@components/Footer";
 import FeedbackForm from '@components/FeedbackForm';
-import background from './bg-blank.svg';
+import background from '/bg-blank.svg';
 
 const styling = {
     backgroundImage: `url(${background.src})`,
@@ -20,7 +20,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <img src='./ram.png' alt="Rammy"/>
+        <img src='/ram.svg' alt="Rammy"/>
         <FeedbackForm />
       </main>
       <Footer />
