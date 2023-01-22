@@ -15,6 +15,7 @@ const logo = {
     width:"9vw",
     display:"flex",
     justifyContent: "center",
+    padding:"1vh"
 }
 
 
