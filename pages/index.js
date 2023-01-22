@@ -11,16 +11,14 @@ const styling = {
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className="container" style={styling}>
       <Head>
         <title>Footprint Calculator</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <div style={styling}>
-          <FeedbackForm />
-        </div>
+        <FeedbackForm />
       </main>
       <Footer />
     </div>
