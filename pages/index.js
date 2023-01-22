@@ -20,8 +20,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <img src='./ram.svg' alt="Rammy"/>
-        <img src='./background.svg' alt="Test img"/>
+        <img src='./rammy.svg' alt="Rammy"/>
         <FeedbackForm />
       </main>
       <Footer />
