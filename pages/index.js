@@ -13,7 +13,7 @@ const backgroundStyling = {
 const logo = {
     height:"50px",
     width:"50px",
-    
+    text-align:start
 }
 
 
