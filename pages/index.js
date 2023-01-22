@@ -25,9 +25,9 @@ export default function Home() {
         <title>Footprint Calculator</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <img src='./ram.svg' alt="Rammy" style={logo}/>
       <main>
-        <img src='./ram.svg' alt="Rammy" style={logo}/>
+        
         <FeedbackForm />
       </main>
     </div>
