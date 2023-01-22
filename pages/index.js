@@ -5,8 +5,8 @@ import background from './bg-blank.svg';
 
 const styling = {
     backgroundImage: `url(${background.src})`,
-    width:"100%",
-    height:"100%",
+    width:"100vw",
+    height:"100vh",
 }
 
 export default function Home() {
