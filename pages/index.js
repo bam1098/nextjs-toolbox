@@ -8,7 +8,7 @@ const styling = {
     width:"100%",
     height:"100%",
     backgroundRepeat:"no-repeat",
-    objectFit: contain;
+    objectFit: contain,
 }
 
 export default function Home() {
