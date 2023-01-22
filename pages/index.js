@@ -6,7 +6,9 @@ import background from './bg.svg';
 const styling = {
     backgroundImage: `url(${background.src})`,
     width:"100%",
-    height:"100%"
+    height:"100%",
+    backgroundRepeat:"no-repeat",
+    
 }
 
 export default function Home() {
