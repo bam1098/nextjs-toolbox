@@ -6,7 +6,6 @@ import background from './bg-blank.svg';
 const backgroundStyling = {
     backgroundImage: `url(${background.src})`,
     backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
     width:"100vw",
     height:"100vh",
 }
