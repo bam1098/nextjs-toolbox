@@ -1,5 +1,6 @@
 .background{
     background: url("./bg-blank.svg");
+    backgroundSize: "cover";
     width:"100vw";
     height:"130vh";
 }
