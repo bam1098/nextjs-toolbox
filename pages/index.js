@@ -8,7 +8,6 @@ const backgroundStyling = {
     backgroundSize: 'cover',
     width:"100vw",
     height:"130vh",
-    filter: "blur(8px)",
 }
 const logo = {
     height:"10vh",
