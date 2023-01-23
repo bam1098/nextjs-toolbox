@@ -21,7 +21,7 @@ const logo = {
 export default function Home() {
   return (
     <div className="container" style={backgroundStyling}></div>
-    <div>
+    <div className="container">
       <Head>
         <title>Footprint Calculator</title>
         <link rel="icon" href="/favicon.ico" />
