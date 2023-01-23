@@ -1,3 +1,5 @@
 .backgroundStyles{
-  
+    background: url("./bg-blank.svg"),
+    width:"100vw",
+    height:"130vh",
 }
