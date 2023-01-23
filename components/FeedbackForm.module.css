@@ -96,3 +96,8 @@
 .tab {
   color: white;
 }
+
+.tabPic {
+  height: 15vh;
+  width: 15vw;
+}
