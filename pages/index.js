@@ -20,18 +20,18 @@ const logo = {
 
 export default function Home() {
   return (
-    <div style={backgroundStyling}>
-    </div>
-    <div className="container">
-      <Head>
-        <title>Footprint Calculator</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <img src='./ram.svg' alt="Rammy" style={logo}/>
-      <main>
-        
-        <FeedbackForm />
-      </main>
+    <div>
+        <div className="container" style={backgroundStyling}>
+          <Head>
+            <title>Footprint Calculator</title>
+            <link rel="icon" href="/favicon.ico" />
+          </Head>
+          <img src='./ram.svg' alt="Rammy" style={logo}/>
+          <main>
+
+            <FeedbackForm />
+          </main>
+        </div>
     </div>
   );
 }
