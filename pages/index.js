@@ -7,11 +7,11 @@ const backgroundStyling = {
     backgroundImage: `url(${background.src})`,
     backgroundSize: 'cover',
     width:"100vw",
-    height:"130vh",
+    height:"140vh",
 }
 const logo = {
-    height:"10vh",
-    width:"10vw",
+    height:"12vh",
+    width:"12vw",
     display:"flex",
     justifyContent: "center",
     padding:"1vh"
