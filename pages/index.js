@@ -1,9 +1,10 @@
 import Head from "next/head";
 import Footer from "@components/Footer";
 import FeedbackForm from '@components/FeedbackForm';
+import background from './bg-blank.svg';
 
 const backgroundStyling = {
-    backgroundImage: `url(${'./bg-blank.svg'.src})`,
+    backgroundImage: `url(${background.src})`,
     backgroundSize: 'cover',
     width:"100vw",
     height:"130vh",
