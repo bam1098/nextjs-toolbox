@@ -100,8 +100,7 @@ export default function FeedbackForm() {
         </p>
 
         <div class="tab" className={styles[nameStyle]}>
-          <label htmlFor="name">Name</label>
-          <p>Name (Optional)?</p>
+          <label htmlFor="name">Name (Optional)</label>
           <input id="name" className={styles['form-field']} type="text" name="name" />
           <button type="button" className={styles.button} onClick={nameNext}>Next</button>
         </div>
