@@ -2,7 +2,6 @@ import Head from "next/head";
 import Footer from "@components/Footer";
 import FeedbackForm from '@components/FeedbackForm';
 import background from './bg-blank.svg';
-import styles from './index.module.css'
 
 const backgroundStyling = {
     backgroundImage: `url(${background.src})`,
@@ -22,7 +21,7 @@ const logo = {
 export default function Home() {
     return (
         <div>
-            <div className={styles['background']}>
+            <div className={backgroundStyling}>
               <Head>
                 <title>Footprint Calculator</title>
                 <link rel="icon" href="/favicon.ico" />
