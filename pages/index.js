@@ -20,7 +20,8 @@ const logo = {
 
 export default function Home() {
   return (
-    <div style={backgroundStyling}></div>
+    <div style={backgroundStyling}>
+    </div>
     <div className="container">
       <Head>
         <title>Footprint Calculator</title>
