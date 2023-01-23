@@ -7,7 +7,7 @@ const backgroundStyling = {
     backgroundImage: `url(${background.src})`,
     backgroundSize: 'cover',
     width:"100vw",
-    height:"100vh",
+    height:"125vh",
 }
 const logo = {
     height:"10vh",
