@@ -103,12 +103,12 @@ export default function FeedbackForm() {
           <label htmlFor="name">Name</label>
           <p>Name (Optional)?</p>
           <input id="name" className={styles['form-field']} type="text" name="name" />
-          <img src='./house.svg' alt="Test img"/>
           <button type="button" className={styles.button} onClick={nameNext}>Next</button>
         </div>
 
         <div className={styles[meatStyle]}>
           <label htmlFor="meat">Meat</label>
+          <img src='./farm-animals.svg' alt="Animals"/>
           <p>How many times do you eat meat per week?</p>
           <input id="meat" className={styles['slider']} type="range" min="0" max="25" name="meat" onChange={() => handleChange()} defaultValue="0"/>
           <p className={styles['form-field']}>Servings: <span id="meatVal"></span></p>
@@ -118,6 +118,7 @@ export default function FeedbackForm() {
 
          <div className={styles[animalStyle]}>
           <label htmlFor="Non-meat Animal products">Non-meat Animal Products</label>
+          <img src='./milk-eggs.svg' alt="Non-meat"/>
           <p>How many times do you eat cheese per week?</p>
           <input id="cheese" className={styles['slider']} type="range" min="0" max="25" name="cheese" onChange={() => handleChange()} defaultValue="0"/>
           <p className={styles['form-field']}>Servings: <span id="cheeseVal"></span></p>
@@ -133,6 +134,7 @@ export default function FeedbackForm() {
 
         <div className={styles[drivingStyle]}>
           <label htmlFor="driving">Driving</label>
+          <img src='./car.svg' alt="Car"/>
           <p>How many miles per gallon can your car drive?</p>
           <input id="mpg" className={styles['slider']} type="range" min="5" max="50" name="mpg" onChange={() => handleChange()} defaultValue="0"/>
           <p className={styles['form-field']}>Mileage: <span id="mpgVal"></span> MPG</p>
@@ -145,6 +147,7 @@ export default function FeedbackForm() {
 
         <div className={styles[transportStyle]}>
           <label htmlFor="transport">Transport</label>
+          <img src='./train.svg' alt="Train"/>
           <p>How many miles have you flown in the last year?</p>
           <input id="flyMiles" className={styles['slider']} type="range" min="0" max="20000" name="flyMiles" onChange={() => handleChange()} step="100" defaultValue="0"/>
           <p className={styles['form-field']}>Miles: <span id="flyMilesVal"></span></p>
