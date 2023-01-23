@@ -108,7 +108,7 @@ export default function FeedbackForm() {
 
         <div className={styles[meatStyle]}>
           <label htmlFor="meat">Meat</label>
-          <img src='./farm-animals.svg' alt="Animals" className={styles['tabPic']}/>
+          <img src='./pig.svg' alt="Animals" className={styles['tabPic']}/>
           <p>How many times do you eat meat per week?</p>
           <input id="meat" className={styles['slider']} type="range" min="0" max="25" name="meat" onChange={() => handleChange()} defaultValue="0"/>
           <p className={styles['form-field']}>Servings: <span id="meatVal"></span></p>
