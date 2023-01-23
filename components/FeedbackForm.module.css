@@ -92,4 +92,6 @@
   display: none;
 }
 
-.tab {}
+.tab {
+  color: white;
+}
