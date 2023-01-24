@@ -22,11 +22,6 @@ const head = {
     color:"black"
 }
 
-const link = {
-    color:"black",
-    backgroundColor:"yellow"
-}
-
 export default function Success() {
   return (
     <div className="container" style={backgroundStyling}>
@@ -36,7 +31,7 @@ export default function Success() {
 
       <main>
         <h1 style={head}>Submission Received!</h1>
-        <p style={link}><Link href="/"><a>Click here</a></Link> to return to take the survey again.</p>
+        <p><Link href="/"><a>Click here</a></Link> to return to take the survey again.</p>
       </main>
 
     </div>
