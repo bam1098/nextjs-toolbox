@@ -18,6 +18,15 @@ const logo = {
     padding:"1vh"
 }
 
+const head = {
+    color:"black"
+}
+
+const link = {
+    color:"black",
+    backgroundColor:"yellow"
+}
+
 export default function Success() {
   return (
     <div className="container" style={backgroundStyling}>
