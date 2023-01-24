@@ -35,8 +35,8 @@ export default function Success() {
       </Head>
 
       <main>
-        <h1 color='black'>Submission Received!</h1>
-        <p><Link href="/"><a>Click here</a></Link> to return to take the survey again.</p>
+        <h1 style={head}>Submission Received!</h1>
+        <p style={link}><Link href="/"><a>Click here</a></Link> to return to take the survey again.</p>
       </main>
 
     </div>
