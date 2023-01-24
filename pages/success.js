@@ -8,6 +8,7 @@ const backgroundStyling = {
     backgroundSize: 'cover',
     width:"100vw",
     height:"140vh",
+    color:'white',
 }
 const logo = {
     height:"13vh",
@@ -21,16 +22,14 @@ export default function Success() {
   return (
     <div className="container" style={backgroundStyling}>
       <Head>
-        <title>Next.js Toolbox Template!</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Footprint calculator submission</title>
       </Head>
 
       <main>
         <h1>Submission Received!</h1>
-        <p>Thank you for your feedback! Head back to the <Link href="/"><a>home page</a></Link>.</p>
+        <p><Link href="/"><a>Click here</a></Link> to return to take the survey again.</p>
       </main>
 
-      <Footer />
     </div>
   )
 }
