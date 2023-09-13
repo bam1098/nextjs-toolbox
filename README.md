@@ -1,4 +1,4 @@
-# Next.js Toolbox Template 
+# Next.js Toolbox Template
 
 ![next-on-netlify](https://user-images.githubusercontent.com/3611928/156433088-21a7cdf6-760c-4758-a3b7-9073bac5e452.png)
 
